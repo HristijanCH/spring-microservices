@@ -1,8 +1,9 @@
 package com.kiko.employeeservice.service;
 
+import com.kiko.employeeservice.dto.ApiResponseDto;
 import com.kiko.employeeservice.dto.EmployeeDto;
 
 public interface EmployeeService {
     EmployeeDto saveEmployee(EmployeeDto employeeDto);
-    EmployeeDto getEmployeeById(Long id);
+    ApiResponseDto getEmployeeById(Long id);
 }
